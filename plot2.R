@@ -7,7 +7,7 @@ readData<-function()
       data
 }
 data<-readData()
-
+Sys.setlocale("LC_TIME", "English") 
 ##Plot 2
 par(mar=c(2,4,1,1), mfrow=c(1,1))
 plot(data$DateTime,data$Global_active_power, type = "l", xlab="", ylab="Global Active Power (kilowatts)")

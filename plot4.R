@@ -7,7 +7,7 @@ readData<-function()
       data
 }
 data<-readData()
-
+Sys.setlocale("LC_TIME", "English") 
 ##Plot 4
 dev.off()
 par(mar=c(5,4,4,2), mfrow=c(2,2))

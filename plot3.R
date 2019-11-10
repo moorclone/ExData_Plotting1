@@ -7,7 +7,7 @@ readData<-function()
       data
 }
 data<-readData()
-
+Sys.setlocale("LC_TIME", "English") 
 ##Plot 3
 par(mar=c(2,4,1,1), mfrow=c(1,1))
 with(data, plot(DateTime, Sub_metering_1, type="n", ylab="Energy sub metering"))

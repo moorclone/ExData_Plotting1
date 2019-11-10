@@ -7,10 +7,10 @@ readData<-function()
       data
 }
 data<-readData()
-
+Sys.setlocale("LC_TIME", "English") 
 ##Plot 1
 par(mar=c(4,4,1,1), mfrow=c(1,1))
 hist(data$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)", ylim=c(0,1200))
 
-dev.copy(png, file = "plot2.png", width=504, height=504)
+dev.copy(png, file = "plot1.png", width=504, height=504)
 dev.off()
